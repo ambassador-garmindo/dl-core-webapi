@@ -34,4 +34,7 @@ describe('@dl-core-webapi', function () {
     test("~/master/standard-test", "./routes/master/standard-test");
     test("~/master/yarn-material", "./routes/master/yarn-material");
     test("~/master/color-type", "./routes/master/color-type");
+    test("~/master/comodity", "./routes/master/comodity");
+    test("~/master/quality", "./routes/master/quality");
+    test("~/master/account-bank", "./routes/master/account-bank");
 });

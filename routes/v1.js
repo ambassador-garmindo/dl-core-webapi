@@ -36,6 +36,9 @@
  var v1YarnMaterialRouter = require('../src/routers/v1/master/yarn-material-router');
  var v1StandardTestRouter = require('../src/routers/v1/master/standard-test-router');
  var v1ColorTypeRouter = require('../src/routers/v1/master/color-type-router');
+ var v1ComodityRouter = require('../src/routers/v1/master/comodity-router');
+ var v1QualityRouter = require('../src/routers/v1/master/quality-router');
+ var v1AccountBankRouter = require('../src/routers/v1/master/account-bank-router');
 
  module.exports = function(server) {
  
@@ -76,5 +79,9 @@
      v1YarnMaterialRouter().applyRoutes(server,             "/v1/master/yarn-materials");
      v1StandardTestRouter().applyRoutes(server,             "/v1/master/standard-tests");
      v1ColorTypeRouter().applyRoutes(server,                "/v1/master/color-types");
+     v1ComodityRouter().applyRoutes(server,                 "/v1/master/comodities");
+     v1QualityRouter().applyRoutes(server,                  "/v1/master/qualities");
+     v1AccountBankRouter().applyRoutes(server,              "/v1/master/account-banks");
+
      v1PowerBiRouter().applyRoutes(server,                  "/v1/core/power-bi/reports");
 };

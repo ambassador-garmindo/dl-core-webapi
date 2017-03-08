@@ -24,7 +24,7 @@ function getJWTRouter(ManagerType, opts) {
     router.get("/", passport, function(request, response, next) {
         var user = request.user;
         var query = request.query;
-        query.order = Object.assign({}, defaultOrder, query.order);
+        query.order = Object.assign({}, query.order, defaultOrder, query.order);
 
         getManager(user)
             .then((manager) => {

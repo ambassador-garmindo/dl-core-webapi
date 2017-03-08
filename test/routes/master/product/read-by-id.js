@@ -95,8 +95,8 @@ it(`#02. create new data and set header.location- [POST]${uri}`, function (done)
         });
 });
 
-it(`#03. get list by Id - [GET]/master/products/byId`, function (done) {
 
+it(`#03. get list by Id - [GET]/master/products/byId`, function (done) {
         request
             .get(`/master/products/byId?productList=${JSON.stringify(createdIds)}`)
             .set("authorization", `JWT ${jwt}`)
