@@ -15,18 +15,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danliris/dl-core-webapi.git"
+    "url": "git+https://github.com/ambassador-garmindo/dl-core-webapi.git"
   },
   "author": "Moonlay",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/danliris/dl-core-webapi/issues"
+    "url": "https://github.com/ambassador-garmindo/dl-core-webapi/issues"
   },
-  "homepage": "https://github.com/danliris/dl-core-webapi#readme",
+  "homepage": "https://github.com/ambassador-garmindo/dl-core-webapi#readme",
   "dependencies": {
     "assert": "^1.4.1",
-    "dl-models": "git+https://github.com/danliris/dl-models.git",
-    "dl-module": "git+https://github.com/danliris/dl-module.git#dev",
+    "dl-models": "git+https://github.com/ambassador-garmindo/dl-models.git",
+    "dl-module": "git+https://github.com/ambassador-garmindo/dl-module.git#dev",
     "fast-csv": "^2.3.0",
     "json2xls": "^0.1.2",
     "jsonwebtoken": "^7.2.0",
