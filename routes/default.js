@@ -40,6 +40,7 @@
  var v1ComodityRouter = require('../src/routers/v1/master/comodity-router');
  var v1QualityRouter = require('../src/routers/v1/master/quality-router');
  var v1AccountBankRouter = require('../src/routers/v1/master/account-bank-router');
+ var v1TermOfPaymentRouter = require('../src/routers/v1/master/term-of-payment-router');
 
  module.exports = function(server) {
  
@@ -83,6 +84,7 @@
      v1ComodityRouter().applyRoutes(server,                 "/master/comodities");
      v1QualityRouter().applyRoutes(server,                  "/master/qualities");
      v1AccountBankRouter().applyRoutes(server,              "/master/account-banks");
+     v1TermOfPaymentRouter().applyRoutes(server,            "/master/term-of-payments");
 
      v1PowerBiRouter().applyRoutes(server,                  "/core/power-bi/reports"); 
 };

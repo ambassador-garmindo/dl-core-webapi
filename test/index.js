@@ -37,4 +37,5 @@ describe('@dl-core-webapi', function () {
     test("~/master/comodity", "./routes/master/comodity");
     test("~/master/quality", "./routes/master/quality");
     test("~/master/account-bank", "./routes/master/account-bank");
+    test("~/master/term-of-payment", "./routes/master/term-of-payment");
 });
