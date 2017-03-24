@@ -1,6 +1,7 @@
  var v1BuyerRouter = require('../src/routers/v1/master/buyer-router');
  var v1SupplierRouter = require('../src/routers/v1/master/supplier-router');
  var v1ProductRouter = require('../src/routers/v1/master/product-router');
+ var v1ProductByIdRouter = require('../src/routers/v1/master/product-by-id-router');
  var v1UoMRouter = require('../src/routers/v1/master/uom-router');
  var v1UnitRouter = require('../src/routers/v1/master/unit-router');
  var v1CategoryRouter = require('../src/routers/v1/master/category-router');
@@ -35,11 +36,16 @@
  var v1YarnMaterialRouter = require('../src/routers/v1/master/yarn-material-router');
  var v1StandardTestRouter = require('../src/routers/v1/master/standard-test-router');
  var v1ColorTypeRouter = require('../src/routers/v1/master/color-type-router');
+ var v1ComodityRouter = require('../src/routers/v1/master/comodity-router');
+ var v1QualityRouter = require('../src/routers/v1/master/quality-router');
+ var v1AccountBankRouter = require('../src/routers/v1/master/account-bank-router');
+ var v1TermOfPaymentRouter = require('../src/routers/v1/master/term-of-payment-router');
 
  module.exports = function(server) {
  
      v1BuyerRouter().applyRoutes(server,                    "/v1/master/buyers");
      v1SupplierRouter().applyRoutes(server,                 "/v1/master/suppliers/");
+     v1ProductByIdRouter().applyRoutes(server,              "/v1/master/products/byId");
      v1ProductRouter().applyRoutes(server,                  "/v1/master/products");
      v1UoMRouter().applyRoutes(server,                      "/v1/master/uoms");
      v1UnitRouter().applyRoutes(server,                     "/v1/master/units");
@@ -74,5 +80,10 @@
      v1YarnMaterialRouter().applyRoutes(server,             "/v1/master/yarn-materials");
      v1StandardTestRouter().applyRoutes(server,             "/v1/master/standard-tests");
      v1ColorTypeRouter().applyRoutes(server,                "/v1/master/color-types");
+     v1ComodityRouter().applyRoutes(server,                 "/v1/master/comodities");
+     v1QualityRouter().applyRoutes(server,                  "/v1/master/qualities");
+     v1AccountBankRouter().applyRoutes(server,              "/v1/master/account-banks");
+     v1TermOfPaymentRouter().applyRoutes(server,            "/v1/master/term-of-payments");
+
      v1PowerBiRouter().applyRoutes(server,                  "/v1/core/power-bi/reports");
 };
