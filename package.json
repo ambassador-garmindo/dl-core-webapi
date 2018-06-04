@@ -25,8 +25,8 @@
   "homepage": "https://github.com/ambassador-garmindo/dl-core-webapi#readme",
   "dependencies": {
     "assert": "^1.4.1",
-    "dl-models": "git+https://github.com/ambassador-garmindo/dl-models.git#uat",
-    "dl-module": "git+https://github.com/ambassador-garmindo/dl-module.git#uat",
+    "dl-models": "git+https://github.com/ambassador-garmindo/dl-models.git#dev",
+    "dl-module": "git+https://github.com/ambassador-garmindo/dl-module.git#dev",
     "fast-csv": "^2.3.0",
     "json2xls": "^0.1.2",
     "jsonwebtoken": "^7.2.0",
