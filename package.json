@@ -10,8 +10,8 @@
     "start": "node index.js"
   },
   "engines": {
-    "node": "6.3.0",
-    "npm": "3.10.9"
+    "node": "6.9.2",
+    "npm": "3.10.10"
   },
   "repository": {
     "type": "git",
